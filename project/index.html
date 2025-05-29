@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Профессиональные решения для вашего бизнеса. Разработка ПО, маркетинг и консалтинг.">
+    <title>Рабочая компания | Профессиональные бизнес-решения</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Merriweather:wght@700&family=Montserrat:wght@500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.min.css">
+    <link rel="preload" as="image" href="logo.webp">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+
+<header class="site-header" role="banner">
+    <div class="container">
+        <a href="/" class="logo" aria-label="Логотип компании">
+            <img src="./project5.webp.png" alt="Логотип компании" width="150" height="50" loading="lazy">
+        </a>
+        <nav class="main-nav" aria-label="Основное меню">
+            <button class="menu-toggle" aria-expanded="false" aria-controls="main-menu">
+                <span class="sr-only">Меню</span>
+                <span class="hamburger"></span>
+            </button>
+            <ul id="main-menu">
+                <li><a href="#about">О компании</a></li>
+                <li><a href="#services">Услуги</a></li>
+                <li><a href="#portfolio">Портфолио</a></li>
+                <li><a href="#events">Мероприятия</a></li>
+                <li><a href="#career">Карьера</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+<main>
+
+    <section class="hero-section" aria-labelledby="main-heading">
+        <div class="hero-content">
+            <h1 id="main-heading">Добро пожаловать в нашу компанию!</h1>
+            <p>Профессиональные решения для вашего бизнеса.</p>
+            <button class="btn btn-primary open-modal" aria-label="Записаться на консультацию">Записаться на консультацию</button>
+        </div>
+    </section>
+
+    <section id="about" class="about-us section-padding" itemscope itemtype="https://schema.org/Organization">
+        <div class="container">
+            <h2>О нашей компании</h2>
+            <p itemprop="description">Наша компания была создана в <time datetime="2010">2010 году</time> и специализируется на оказании профессиональных услуг в сфере бизнеса и IT-технологий. Команда высококвалифицированных специалистов готова решать самые сложные задачи оперативно и эффективно.</p>
+        </div>
+    </section>
+
+    <section id="services" class="our-services section-padding">
+        <div class="container">
+            <h2>Наши услуги</h2>
+            <div class="service-list">
+                <article class="service-card" itemscope itemtype="https://schema.org/Service">
+                    <h3 itemprop="name">Разработка ПО</h3>
+                    <p itemprop="description">Индивидуальные решения для автоматизации бизнес-процессов.</p>
+                </article>
+                <article class="service-card" itemscope itemtype="https://schema.org/Service">
+                    <h3 itemprop="name">Маркетинг</h3>
+                    <p itemprop="description">Продвижение продуктов и брендов на рынок.</p>
+                </article>
+                <article class="service-card" itemscope itemtype="https://schema.org/Service">
+                    <h3 itemprop="name">Консалтинг</h3>
+                    <p itemprop="description">Анализ и улучшение эффективности бизнеса.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio section-padding">
+        <div class="container">
+            <h2>Наши работы</h2>
+            <div class="project-gallery">
+                <figure>
+                    <img src="./project1.webp.jpg" alt="Проект автоматизации для розничной сети" width="400" height="300" loading="lazy">
+                    <figcaption>Автоматизация розничной сети</figcaption>
+                </figure>
+                <figure>
+                    <img src="./project2.webp.jpg" alt="Маркетинговая кампания для бренда одежды" width="400" height="300" loading="lazy">
+                    <figcaption>Продвижение бренда</figcaption>
+                </figure>
+                <figure>
+                    <img src="./project3.webp.jpg" alt="Консалтинговый проект для производственного предприятия" width="400" height="300" loading="lazy">
+                    <figcaption>Оптимизация производства</figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <section id="events" class="events section-padding">
+        <div class="container">
+            <h2>Корпоративные мероприятия</h2>
+            <p>Организовываем тематические встречи и конференции для партнёров и сотрудников.</p>
+            <img src="./project4.webp.png" >
+        </div>
+    </section>
+
+    <section id="career" class="careers section-padding">
+        <div class="container">
+            <h2>Работайте с нами</h2>
+            <p>Примите участие в развитии динамично растущей компании.</p>
+            <ul class="benefits-list">
+                <li>Конкурентная зарплата</li>
+                <li>Возможности карьерного роста</li>
+                <li>Современный офис в центре города</li>
+                <li>Гибкий график работы</li>
+                <li>Корпоративное обучение</li>
+            </ul>
+        </div>
+    </section>
+</main>
+
+<div class="modal" id="consultation-modal" aria-hidden="true" role="dialog" aria-labelledby="modal-title">
+    <div class="modal-content">
+        <button class="close-modal" aria-label="Закрыть окно">×</button>
+        <h2 id="modal-title">Обратная связь</h2>
+        <form action="#" method="post" id="contact-form">
+            <div class="form-group">
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Сообщение:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-success">Отправить</button>
+        </form>
+    </div>
+</div>
+
+<footer id="contact" class="contacts section-padding" itemscope itemtype="https://schema.org/LocalBusiness">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="contact-info">
+                <h2>Контакты</h2>
+                <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+                    <span itemprop="streetAddress">ул. Ленина, д. 10</span>, 
+                    <span itemprop="addressLocality">Москва</span><br>
+                    Телефон: <a href="tel:+74951234567" itemprop="telephone">+7 (928) 918-41-28</a><br>
+                    Email: <a href="mailto:info@company.ru" itemprop="email">www51302@gmail.com</a>
+                </address>
+            </div>
+            <form class="contact-form" id="footer-contact-form">
+                <h3>Напишите нам</h3>
+                <div class="form-group">
+                    <input type="email" placeholder="Ваш e-mail" required>
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Сообщение..." required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Отправить</button>
+            </form>
+        </div>
+        <div class="copyright">
+            <p>&copy; <span itemprop="name">Рабочая компания</span> <span id="current-year"></span>. Все права защищены.</p>
+        </div>
+    </div>
+</footer>
+
+<script defer src="scripts.min.js"></script>
+
+
+<button class="back-to-top" aria-label="Наверх" title="Наверх">
+
+
+
+<button class="back-to-top" aria-label="Вернуться наверх" title="Вернуться наверх">
+    ↩️
+</button>
+</button>
+
+
+</body>
+</html>
